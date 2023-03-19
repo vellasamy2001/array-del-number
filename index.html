@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title> value delete</title>
+	</head>
+  <body>
+	       
+	<h3>array value change</h3>
+	<script>
+	var sum=[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200];
+	var position=prompt("position>20");
+	var value=prompt("value");
+	for(i=0;i<sum.length;++i){
+	  if(i==position){
+	    sum[i]=value;
+	  }
+	  
+	}
+	 document.write(sum); 
+	</script>
+	<h3>array-delete</h3>
+	<script>
+		var vellasamy=[100,200,300,400,500,600,700,800,900
+		,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000];
+		var position=prompt("which  position is delete");
+		var b=-1;
+	    for(i=0;i<vellasamy.length;++i){
+			if(vellasamy[i]!==vellasamy[position]){
+			vellasamy[++b]=vellasamy[i];
+			}
+		}
+	   vellasamy.length=vellasamy.length-1;
+		document.write(vellasamy);
+	</script>
+	 
+	 
+	 
+
+  
+  </body>
+  </html>
